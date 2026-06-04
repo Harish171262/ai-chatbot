@@ -12,7 +12,8 @@ app.post("/api/chat", async (req, res) => {
   try {
     const { message } = req.body;
 
-    const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + process.env.GEMINI_API_KEY;
+    // Corrected model name to gemini-1.5-flash
+    const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + process.env.GEMINI_API_KEY;
 
     const response = await fetch(url, {
       method: "POST",
@@ -25,6 +26,7 @@ app.post("/api/chat", async (req, res) => {
     const data = await response.json();
 
     if (data.error) {
+      console.error("API Error Details:", data.error);
       return res.json({ reply: "Please wait 15 seconds and try again!" });
     }
 
