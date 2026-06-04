@@ -5,6 +5,7 @@ WhatsApp-style chat interface.
 
 ## 🔗 Live Demo
 frontend: https://effulgent-duckanoo-0c643f.netlify.app/
+
 backend: https://ai-chatbot-backend-ad8n.onrender.com
 
 ## 🛠️ Tech Stack
