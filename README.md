@@ -4,7 +4,8 @@ AI powered chatbot using Google Gemini AI.
 WhatsApp-style chat interface.
 
 ## 🔗 Live Demo
-https://effulgent-duckanoo-0c643f.netlify.app/
+frontend: https://effulgent-duckanoo-0c643f.netlify.app/
+backend: https://ai-chatbot-backend-ad8n.onrender.com
 
 ## 🛠️ Tech Stack
 - React.js
